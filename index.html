@@ -1,0 +1,44 @@
+<!-- Black background, one centered input field with a white button with an onclick handler -->
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.js"></script>
+    <script src="source.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        input {
+            width: 50%;
+            height: 50px;
+            font-size: 20px;
+        }
+        button {
+            width: 50%;
+            height: 50px;
+            font-size: 20px;
+        }
+        #content{
+            position: relative;
+            top: 25%;
+        }
+        #decrypted {
+            font-size: 20px;
+            padding-top: 20px;
+            font-family: monospace;
+        }
+        #👀{
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <input type="text" id="input" placeholder="zadaj kľúč" />
+        <button onclick="decipher()">Dešifruj!</button>
+        <div id="decrypted">
+        </div>
+    </div>
+    <p id="👀">Ako to dešifrovanie funguje???</p>
+</body>
